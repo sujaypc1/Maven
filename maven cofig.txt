@@ -1,0 +1,36 @@
+Maven Eclipse plugin installation step by step:
+
+Open Eclipse IDE
+Click Help -> Install New Software...
+Click Add button at top right corner
+At pop up: fill up Name as "M2Eclipse" and Location as "http://download.eclipse.org/technology/m2e/releases" or http://download.eclipse.org/technology/m2e/milestones/1.0
+
+Now click OK
+
+Another way to install Maven plug-in for Eclipse:
+
+Open Eclipse
+Go to Help -> Eclipse Marketplace
+Search by Maven
+Click "Install" button at "Maven Integration for Eclipse" section
+Follow the instruction step by step
+
+
+
+Then go to
+user->preference->maven->user settings
+and provide path of settings.xml file
+
+edit proxy setting to seting.xml file as follows
+<proxies>
+  
+      <proxy>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>gaproxy.persistent.co.in</host>
+      <port>8080</port>
+      <username>username</username>
+      <password>pass</password>
+
+    </proxy>
+</proxies>
