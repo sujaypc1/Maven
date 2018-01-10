@@ -1,7 +1,7 @@
-pipleline {
+pipeline {
   agent any
 
-   Stages {
+   stages {
          stage ('Compile Stage') {
 
                steps {
@@ -30,4 +30,5 @@ pipleline {
                       }
                   }
              }
+   }
 }
